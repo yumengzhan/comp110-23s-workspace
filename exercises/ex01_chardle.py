@@ -8,7 +8,7 @@ if (len(word_entered) != 5):
     exit()
 else:
     your_special_character: str = input("Enter a single character: ")
-    if (len(your_special_character)! = 1):
+    if (len(your_special_character) != 1):
         print("Error: Character must be a single character.")
         exit()
     else:
