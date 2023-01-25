@@ -1,62 +1,56 @@
 """EX01 - Chardle - A cute step toward Wordle."""
-__author__= "730619940"
+__author__ = "730619940"
 
-word_entered: str= input("Enter a 5-character word: ")
+word_entered: str = input("Enter a 5-character word: ")
 
-if(len(word_entered)!=5):
-    print("Error: Word must contain 5 characters")
+if ( len ( word_entered ) != 5 ):
+    print( "Error: Word must contain 5 characters" )
     exit()
 else:
-    your_special_character: str= input("Enter a single character: ")
-    if(len(your_special_character)!=1):
-        print("Error: Character must be a single character.")
+    your_special_character : str= input( "Enter a single character: ")
+    if( len(your_special_character)!=1 ) :
+        print ( "Error: Character must be a single character." )
         exit()
     else:
-        print("Searching for "+your_special_character+" in "+  word_entered)
+        print ( "Searching for "+ your_special_character + " in " +  word_entered )
 
 
-count: int=0
-if (your_special_character==word_entered[0]):
-    count =count+1
-    print(your_special_character+ " found at index 0")
-if (your_special_character==word_entered[1]):
+count: int = 0
+if ( your_special_character == word_entered[0]):
+    count = count + 1
+    print ( your_special_character + " found at index 0")
+if ( your_special_character == word_entered[1]):
+    count = count+1
+    print ( your_special_character + " found at index 1 ")
+if ( your_special_character == word_entered[2]):
+    count = count+1
+    print ( your_special_character + " found at index 2 ")
+if ( your_special_character == word_entered[3]):
     count=count+1
-    print(your_special_character+ " found at index 1 ")
-if (your_special_character==word_entered[2]):
-    count=count+1
-    print(your_special_character+ " found at index 2 ")
-if (your_special_character==word_entered[3]):
-    count=count+1
-    print(your_special_character+ " found at index 3 ")
-if (your_special_character==word_entered[4]):
-    count=count+1
-    print(your_special_character+ " found at index 4 ")
-count=int(0)
-if (word_entered[0]==your_special_character):
-    count=count+1
-if (word_entered[1]==your_special_character):
-    count=count+1
-if (word_entered[2]==your_special_character):
-    count=count+1
-if (word_entered[3]==your_special_character):
-    count=count+1
-if (word_entered[4]==your_special_character):
-    count=count+1
-if (count==0):
-    print("No instances of "+ your_special_character+" found in "+word_entered)
-if (count==1):
-    print("1 instance of "+ your_special_character+" found in "+word_entered)
-if (count==2):
-    print("2 instances of "+ your_special_character+" found in "+word_entered)
-if (count==3):
-    print("3 instances of "+ your_special_character+" found in "+word_entered)
-if (count==4):
-    print("4 instances of "+ your_special_character+" found in "+word_entered)
-if (count==5):
-    print("5 instances of "+ your_special_character+" found in "+word_entered)
-
-
-
-
-
-
+    print ( your_special_character + " found at index 3 ")
+if ( your_special_character == word_entered[4]):
+    count = count+1
+    print ( your_special_character + " found at index 4 ")
+count = int(0)
+if ( word_entered[0] == your_special_character):
+    count = count+1
+if ( word_entered[1] == your_special_character):
+    count = count+1
+if ( word_entered[2] == your_special_character):
+    count = count+1
+if ( word_entered[3] == your_special_character):
+    count = count+1
+if ( word_entered[4] == your_special_character):
+    count = count+1
+if ( count == 0):
+    print("No instances of " + your_special_character + " found in " + word_entered)
+if (count == 1):
+    print("1 instance of " + your_special_character + " found in " + word_entered)
+if (count == 2):
+    print("2 instances of " + your_special_character + " found in " + word_entered)
+if (count == 3):
+    print("3 instances of " + your_special_character + " found in " + word_entered)
+if (count == 4):
+    print("4 instances of " + your_special_character + " found in " + word_entered)
+if (count == 5):
+    print("5 instances of " + your_special_character + " found in " + word_entered)
