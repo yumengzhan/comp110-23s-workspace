@@ -1,5 +1,5 @@
 """EX01 - Chardle - A cute step toward Wordle."""
-__author__="736619940"
+__author__= "730619940"
 
 word_entered: str= input("Enter a 5-character word: ")
 if (len(word_entered)==4):
@@ -34,7 +34,7 @@ if (your_special_character==word_entered[3]):
 if (your_special_character==word_entered[4]):
     count=count+1
     print(your_special_character+ " found at index 4 ")
-
+count=int(0)
 if (word_entered[0]==your_special_character):
     count=count+1
 if (word_entered[1]==your_special_character):
