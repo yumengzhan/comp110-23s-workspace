@@ -1,23 +1,19 @@
 """EX01 - Chardle - A cute step toward Wordle."""
 __author__= "730619940"
 
-
 word_entered: str= input("Enter a 5-character word: ")
-if (len(word_entered)==4):
+
+if(len(word_entered)!=5):
     print("Error: Word must contain 5 characters")
     exit()
-if (len(word_entered)==8):
-    print("Error: Word must contain 5 characters")
-    exit()
+else:
+    your_special_character: str= input("Enter a single character: ")
+    if(len(your_special_character)!=1):
+        print("Error: Character must be a single character.")
+        exit()
+    else:
+        print("Searching for "+your_special_character+" in "+  word_entered)
 
-
-your_special_character: str= input("Enter a single character: ")
-if (len(your_special_character)==3):
-    print("Error: Character must be a single character.")
-    exit()
-if (len(your_special_character)==0):
-    print("Error: Character must be a single character.")
-    exit()
 
 count: int=0
 if (your_special_character==word_entered[0]):
