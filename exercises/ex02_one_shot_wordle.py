@@ -5,7 +5,7 @@ SECRET: str = "python"
 length: int = len(SECRET)
 guess: str = input(f"What is your {length}-letter guess? ")
 
-while (len(guess) != len(SECRET)): #The length of the guess is not equal to that of the secret word"
+while (len(guess) != len(SECRET)):  # The length of the guess is not equal to that of the secret word"
     guess = input(f"That was not {length} letters! Try again: ")
 
 playing: bool = True
@@ -35,7 +35,7 @@ while playing:
                     Alternate_index = Alternate_index + 1        
             if (Character_exists is True):
                 stored_variable = stored_variable + YELLOW_BOX
-            else:#White box if the character does not exist
+            else:  # White box if the character does not exist
                 stored_variable = stored_variable + WHITE_BOX
         guess_idx = guess_idx + 1
     print(stored_variable)
