@@ -5,7 +5,7 @@ secret: str = "python"
 length: int = len(secret)
 guess: str = input(f"What is your {length}-letter guess? ")
 
-while (len(guess) != len(secret)):  # The length of the guess is not equal to that of the secret word"
+while (len(guess) != len(secret)):  # The length of the guess is not equal to that of the secret word
     guess = input(f"That was not {length} letters! Try again: ")
 
 playing: bool = True
