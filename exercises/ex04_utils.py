@@ -1,7 +1,6 @@
 """EX04 - utils."""
 __author__ = "730619940"
 
-
 def all(numbers: list[int], num1: int) -> bool:
     """Testing if all the integers in the list are the same."""
     length: int = len(numbers)
