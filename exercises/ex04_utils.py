@@ -13,7 +13,6 @@ def all(numbers: list[int], num1: int) -> bool:
             return False
         i += 1
     return True
-
 def max(input: list[int]) -> int:
     """Find the maximum integer in the list."""
     if len(input) == 0:
@@ -26,7 +25,6 @@ def max(input: list[int]) -> int:
             maxnum = input[i]
         i += 1 
     return maxnum
-
 def is_equal(list1: list[int], list2: list[int]) -> bool:
     """Testing if two lists are the same."""
     if len(list1) != len(list2):
