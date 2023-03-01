@@ -17,7 +17,18 @@ while playing:
             print("too high!")
         guess= int(input("Wrong guess. Try again!"))
 
+def hello_n(n: int) -> int:
+    """A silly example function"""
+    return "hello " + str(n)
 
+print(hello_n(3))
+
+
+def main():
+    print("Hello World!")
+
+if __name__ == "__main__":
+    main()
 
         
 

@@ -3,7 +3,7 @@ __author__ = "730619940"
 
 
 def all(numbers: list[int], num1: int) -> bool:
-    """Testing if all the integers in the list are the same"""
+    """Testing if all the integers in the list are the same."""
     length: int = len(numbers)
     i: int = 0
     if len(numbers) == 0:
@@ -14,9 +14,8 @@ def all(numbers: list[int], num1: int) -> bool:
         i += 1
     return True
 
-
 def max(input: list[int]) -> int:
-    """Find the maximum integer in the list"""
+    """Find the maximum integer in the list."""
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
     length: int = len(input)
@@ -29,7 +28,7 @@ def max(input: list[int]) -> int:
     return maxnum
 
 def is_equal(list1: list[int], list2: list[int]) -> bool:
-    """Testing if two lists are the same"""
+    """Testing if two lists are the same."""
     if len(list1) != len(list2):
         return False
     idx1: int = 0

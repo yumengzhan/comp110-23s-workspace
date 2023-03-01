@@ -49,7 +49,7 @@ def main() -> None:
         result: str = emojified(guess, secret)
         if guess == secret:
             print(f"You won in {turntimes}/{maxturns} turns!")
-            turntimes=maxturns + 2
+                       
         print(result)
         turntimes = turntimes+1
     if turntimes == maxturns + 1:
