@@ -4,6 +4,8 @@ __author__ = "730619940"
 def all(numbers: list[int],num1:int) ->bool:
     length: int=len(numbers)
     i: int=0
+    if len(numbers)==0:
+        return False
     while i<=length-1:
         if numbers[i]!=num1:
             return False
@@ -14,8 +16,8 @@ def max(input: list[int]) ->int:
     if len(input) == 0:
         raise ValueError("max() arg is an empty List")
     length: int=len(input)
-    i: int=0
-    maxnum: int=0
+    i: int=1
+    maxnum:int=input[0]
     while i<=length-1:
         if input[i]>maxnum:
             maxnum=input[i]
