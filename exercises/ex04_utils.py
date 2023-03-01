@@ -1,6 +1,7 @@
 """EX04 - utils."""
 __author__ = "730619940"
 
+
 def all(numbers: list[int], num1: int) -> bool:
     """Testing if all the integers in the list are the same."""
     length: int = len(numbers)
@@ -12,6 +13,7 @@ def all(numbers: list[int], num1: int) -> bool:
             return False
         i += 1
     return True
+
 
 def max(input: list[int]) -> int:
     """Find the maximum integer in the list."""
@@ -25,6 +27,7 @@ def max(input: list[int]) -> int:
             maxnum = input[i]
         i += 1 
     return maxnum
+
 
 def is_equal(list1: list[int], list2: list[int]) -> bool:
     """Testing if two lists are the same."""
